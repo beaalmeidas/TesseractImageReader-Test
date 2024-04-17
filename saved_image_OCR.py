@@ -4,7 +4,7 @@ from PIL import Image
 
 # Only works for images added through code (from the data folder)
 
-img_file = "data/example2.jpeg"
+img_file = "data/image2.jpeg"
 
 img = Image.open(img_file)
 
