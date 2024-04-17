@@ -10,7 +10,7 @@
     <p>This program will use pytesseract to read the data in your image.</p>
     
     <form method="post" enctype="multipart/form-data">
-        <input type="file" name="uploaded-document" accept="image/*" required>
+        <input type="file" name="image" accept="image/*" required>
         <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
         
         <br><br>
