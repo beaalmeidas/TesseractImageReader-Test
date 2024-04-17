@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Image Input</title>
+</head>
+<body>
+    <h1>Add your image here</h1>
+    <p>This program will use pytesseract to read the data in your image.</p>
+    
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="uploaded-document" accept="image/*" required>
+        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+        
+        <br><br>
+
+        <button type="submit">Send</button>
+    </form>    
+</body>
+</html>

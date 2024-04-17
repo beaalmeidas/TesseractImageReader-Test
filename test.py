@@ -2,12 +2,11 @@ import pytesseract
 from PIL import Image
 
 
-img_file = "data/image1.jpg"
+# Only works for images added through code (from the data folder)
 
+img_file = "data/example2.jpeg"
 
 img = Image.open(img_file)
-
-
 
 ocr_result = pytesseract.image_to_string(img)
 
